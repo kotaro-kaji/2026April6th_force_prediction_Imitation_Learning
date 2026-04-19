@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "8ba5fc1cab16cd1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f397a409e758c46b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fdf797247e4b714",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/research_theme_1_force_prediction_material_imitation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "research_theme_1_force_prediction_material_imitation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2e99d8e60a017db1",
+    "type": "split",
+    "children": [
+      {
+        "id": "fefaf6e24331b7c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cdb75ff537673dd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f5b001a7eb317578",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "32549ed96c99fbd0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1d2114553bf517ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc863ad14f9b76a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d67564c0675b15da",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PAPER_TITLE"
+            }
+          },
+          {
+            "id": "80093c7c7751172a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from PAPER_TITLE"
+            }
+          },
+          {
+            "id": "07b5953a6ca34ce8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "37ff2699987cb6c7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "61ce08d36e3eda84",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of PAPER_TITLE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7fdf797247e4b714",
+  "lastOpenFiles": [
+    "outputs/report.md",
+    "raw/research_theme_1_force_prediction_material_imitation.md",
+    "papers/PAPER_TITLE.md",
+    "papers",
+    "README.md",
+    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md",
+    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning",
+    "LLM_knowledge_spaces"
+  ]
+}
