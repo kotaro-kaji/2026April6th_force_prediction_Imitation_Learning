@@ -64,6 +64,7 @@ Example:
 - Preserve traceability: when possible, note source page/file used for claims.
 - Favor incremental edits over large rewrites.
 - Keep the wiki broadly useful across domains (personal, business, learning, technical, creative, etc.).
+- Keep `wiki/` content in English by default unless the user explicitly asks otherwise.
 - Add web material to `raw/` only when it is clearly useful for future work and likely worth preserving locally.
 - Avoid filling `raw/` with easily re-findable material; prefer keeping such content as citations or summaries in `wiki/`.
 - `raw/` is appropriate when re-accessing the source later would be difficult, unstable, or costly in time.
@@ -78,4 +79,8 @@ At small scale, index-based navigation is enough. At larger scale, add search to
 - Use `outputs/` only when the user explicitly asks for a substantial deliverable, such as a research investigation, a detailed summary after checking sources, a proposal document, or another clearly scoped report-like artifact.
 - Default report file for such cases: `outputs/report.md` (append updates chronologically), unless a task-specific file such as `outputs/report_<task_name>.md` is more appropriate.
 - Each `outputs/` report entry should include: timestamp, operation type (`ingest` / `query` / `lint` / `maintenance`), changed files, and a short result summary.
+- Report format is not fixed: if the user requests a specific structure, follow that; otherwise choose the format that is clearest and most useful for the user.
+- Do not force chronological reporting when a task-specific standalone report, comparison memo, or other structure would better match the user's request.
+- Write `outputs/` deliverables in Japanese by default unless the user explicitly asks for another language.
+- This language preference applies to `outputs/` only; `wiki/` pages can remain in English.
 - If the user does not explicitly request that kind of deliverable, prefer responding in chat and updating `raw/`, `wiki/`, `wiki/index.md`, and `wiki/log.md` as needed.
