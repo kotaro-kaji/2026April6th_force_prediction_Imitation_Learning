@@ -1,3 +1,9 @@
 [submodule "raw/dynamical-metalearning"]
 	path = raw/dynamical-metalearning
 	url = https://github.com/GunesCaginAydin/dynamical-metalearning
+[submodule "raw/RoboMorph"]
+	path = raw/RoboMorph
+	url = https://github.com/izzab1926/RoboMorph
+[submodule "raw/sysid-transformers"]
+	path = raw/sysid-transformers
+	url = https://github.com/forgi86/sysid-transformers
