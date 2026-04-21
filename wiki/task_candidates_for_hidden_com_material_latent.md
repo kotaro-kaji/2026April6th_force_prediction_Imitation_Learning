@@ -5,6 +5,14 @@
 Select a task where the same visible geometry can induce meaningfully different manipulation dynamics through hidden physical properties.
 The task should reward estimating latent physics from short force histories and ideally support faster, more open-loop-like actions after adaptation.
 
+## Current Discussion Status
+
+This page should currently be read as a narrowing note rather than a broad recommendation list.
+As of 2026-04-19, the user's working premise is that dual-arm box uprighting is probably too easy to solve by replaying a dual-arm teleoperation trajectory.
+In that task, unseen center of mass and total mass may be close to irrelevant in practice.
+Under that premise, unseen-mass / unseen-CoM PushT still looks like the clearest option if the project remains centered on mass distribution.
+At the same time, a wiping task with sponges of different stiffness or hardness has emerged as a promising alternative if the hidden variable can shift from mass distribution toward compliance.
+
 ## Evaluation Criteria
 
 - Same or near-identical appearance, different dynamics.
@@ -12,11 +20,11 @@ The task should reward estimating latent physics from short force histories and 
 - Force prediction and online latent adaptation should have a clear causal role.
 - The task should still be practical for simulation data collection and later real-robot execution.
 
-## Recommended Ranking
+## Practical Ranking Under The Current Premise
 
 ### 1. Unknown-CoM PushT or constrained planar pushing
 
-This is the cleanest next step.
+This is currently the clearest direction if the project stays centered on hidden mass and center of mass.
 Keeping the external shape fixed while shifting internal mass directly changes how the object rotates during pushing.
 That is well aligned with hidden latent estimation and avoids the ambiguity of geometry changes.
 
@@ -37,7 +45,7 @@ Design recommendation:
 
 ### 2. Unknown-CoM edge pivoting / tumbling to a target pose
 
-This is my strongest recommendation beyond PushT.
+This is no longer a preferred direction under the current premise.
 Instead of merely pushing to a planar goal, the robot repeatedly tilts and pivots the same-looking box around edges or corners to reach a target upright or reoriented pose.
 
 Why it fits:
@@ -46,7 +54,7 @@ Why it fits:
 - The transition between sticking, slipping, and tipping is force-sensitive.
 - Once the robot has identified the latent physics, the motion can plausibly become more ballistic or open-loop-like.
 
-Why it is better than the current box-standing task:
+Why it was previously considered:
 
 - The problem can be redesigned so that one memorized trajectory no longer works across CoM shifts.
 - Repeated pivot steps create multiple chances where wrong latent estimates cause irreversible pose error.
@@ -55,6 +63,7 @@ Main weakness:
 
 - It is harder than PushT to stabilize and evaluate cleanly.
 - Contact mode switches can make demonstrations and simulation tuning more brittle.
+- More importantly, it may still admit success by replaying a strong dual-arm demonstration, which weakens the case that hidden center of mass or mass are causally necessary.
 
 Design recommendation:
 
@@ -64,7 +73,7 @@ Design recommendation:
 
 ### 3. Constrained pushing through a slot, gate, or narrow corridor with unknown CoM
 
-This is a stronger version of PushT for exposing latent physics.
+This remains relevant mainly as a variant of the PushT direction, not as a separate research story.
 The object must be pushed through a geometry that leaves little room for correcting rotation bias.
 
 Why it fits:
@@ -110,19 +119,24 @@ It is better as a later extension if you shift toward general force-aware imitat
 ### Wiping / scraping / polishing
 
 These tasks strongly need force feedback and have good recent results with adaptive force control.
-But they are a poor first benchmark for your current thesis.
-They emphasize continuous feedback regulation more than identification of a hidden object latent that later enables open-loop-like dynamic action.
+Previously this page treated wiping as a weaker fit.
+That assessment should now be considered outdated for the current discussion.
+If the hidden factor is sponge stiffness or hardness, wiping may become a strong benchmark because the material property directly changes contact mechanics and task success.
+The main tradeoff is that this shifts the story away from hidden center of mass and mass distribution toward hidden compliance.
 
 ## Bottom Line
 
-If you want the most research-coherent path:
+Under the current working premise, the path is much narrower than this page originally assumed.
+The main issue is not just to find a contact-rich task, but to find one where replaying a teleoperated dual-arm trajectory is not already enough.
 
-1. Unknown-CoM PushT with a stricter success geometry.
-2. Unknown-CoM edge pivoting or tumbling to a target pose.
-3. Unknown-CoM pushing through a slot or narrow corridor.
+1. Unseen-CoM / unseen-mass PushT with a stricter success geometry.
+2. Wiping with sponges of different stiffness or hardness, if broadening from hidden mass toward hidden compliance is acceptable.
+3. A constrained pushing variant only if it is clearly still part of the same pushing story.
 
-If you want the task that best expresses your long-term idea of “identify hidden physics, then act faster and more decisively,” I would pick unknown-CoM edge pivoting / tumbling.
-If you want the task that is easiest to build, compare, and publish cleanly, I would pick constrained unknown-CoM PushT.
+At the moment, the two live directions are:
+
+- PushT, if the project should keep center of mass and mass as the hidden variables.
+- Wiping with varied sponge hardness, if the project can broaden toward hidden compliance as the latent factor.
 
 ## References
 

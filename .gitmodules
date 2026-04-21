@@ -1,0 +1,3 @@
+[submodule "raw/dynamical-metalearning"]
+	path = raw/dynamical-metalearning
+	url = https://github.com/GunesCaginAydin/dynamical-metalearning

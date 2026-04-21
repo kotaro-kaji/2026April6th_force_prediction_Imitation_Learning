@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/research_theme_1_force_prediction_material_imitation.md",
+                "file": "raw/Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "research_theme_1_force_prediction_material_imitation"
+              "title": "Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control"
             }
           }
         ]
@@ -185,8 +185,22 @@
   },
   "active": "7fdf797247e4b714",
   "lastOpenFiles": [
-    "outputs/report.md",
+    "raw/In-the-Wild Compliant Manipulation with UMI-FT 1.md",
+    "raw/Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control.md",
+    "raw/Adaptive Wiping Adaptive contact-rich manipulation through few-shot imitation learning with Force-Torque feedback and pre-trained object representations.md",
+    "raw/Learning a High-quality Robotic Wiping Policy Using Systematic Reward Analysis and Visual-Language Model Based Curriculum.md",
+    "raw/PBの現状と位置付け.md",
+    "raw/2026-04-19_message_research_direction_and_task_candidates.md",
+    "raw/In-the-Wild Compliant Manipulation with UMI-FT.md",
+    "raw/2026-04-19_note_force_predictor_from_facial_motion_paper.md",
+    "wiki/improving_robotic_imitation_learning_with_predicted_facial_motion_using_transformers.md",
+    "raw/202430182_en.pdf",
+    "raw/2026-04-19_discussion_task_direction.md",
+    "raw/Bi-HIL Bilateral Control-Based Multimodal Hierarchical Imitation Learning via Subtask-Level Progress Rate and Keyframe Memory for Long-Horizon Contact-Rich Robotic Manipulation.md",
     "raw/research_theme_1_force_prediction_material_imitation.md",
+    "raw/aa86afe61b80c84e835bd1ea72138041c4c5 (1).pdf",
+    "raw/PAPER_TITLE.md",
+    "outputs/report.md",
     "papers/PAPER_TITLE.md",
     "papers",
     "README.md",

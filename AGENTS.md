@@ -74,7 +74,8 @@ At small scale, index-based navigation is enough. At larger scale, add search to
 
 ## Reporting Protocol
 
-- To reduce chat overhead, all progress reports and completion reports must be written to files under `outputs/` instead of conversational updates.
-- Default report file: `outputs/report.md` (append updates chronologically).
-- When needed, create task-specific reports such as `outputs/report_<task_name>.md`.
-- Each report entry should include: timestamp, operation type (`ingest` / `query` / `lint` / `maintenance`), changed files, and a short result summary.
+- Do not create files under `outputs/` for ordinary back-and-forth conversation, lightweight edits, or routine wiki maintenance.
+- Use `outputs/` only when the user explicitly asks for a substantial deliverable, such as a research investigation, a detailed summary after checking sources, a proposal document, or another clearly scoped report-like artifact.
+- Default report file for such cases: `outputs/report.md` (append updates chronologically), unless a task-specific file such as `outputs/report_<task_name>.md` is more appropriate.
+- Each `outputs/` report entry should include: timestamp, operation type (`ingest` / `query` / `lint` / `maintenance`), changed files, and a short result summary.
+- If the user does not explicitly request that kind of deliverable, prefer responding in chat and updating `raw/`, `wiki/`, `wiki/index.md`, and `wiki/log.md` as needed.
