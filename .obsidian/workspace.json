@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control.md",
+                "file": "raw/ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control"
+              "title": "ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation"
             }
           }
         ]
@@ -185,8 +185,36 @@
   },
   "active": "7fdf797247e4b714",
   "lastOpenFiles": [
-    "raw/In-the-Wild Compliant Manipulation with UMI-FT 1.md",
+    "raw/2026-04-23_message_dp_latent_methods_2_and_3_reframing.md",
+    "raw/Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers0810.pdf",
+    "raw/sysid-transformers/transformer_sim.py",
+    "raw/sysid-transformers/transformer_onestep.py",
+    "raw/sysid-transformers/train_sim_wh.py",
+    "raw/sysid-transformers/train_sim_lin.py",
+    "raw/sysid-transformers/train_onestep_wh.py",
+    "raw/sysid-transformers/train_onestep_lin.py",
+    "raw/sysid-transformers/test_sim_wh.ipynb",
+    "raw/sysid-transformers/test_sim_lin.ipynb",
+    "raw/sysid-transformers/test_onestep_wh.ipynb",
+    "raw/sysid-transformers/doc/slides/fig/proceeding-logo.jpg",
+    "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.svg",
+    "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.png",
+    "raw/sysid-transformers/doc/slides/fig/architecture/decoder_architecture.svg",
+    "raw/sysid-transformers/doc/slides/fig/architecture/decoder_architecture.png",
+    "raw/sysid-transformers/doc/slides/fig/github-logo.jpg",
+    "raw/sysid-transformers/doc/poster/poster_top.png",
+    "raw/sysid-transformers/doc/poster/figures/wh_sim_single.png",
+    "raw/sysid-transformers/doc/poster/figures/wh_sim_batch_single.png",
+    "raw/sysid-transformers/doc/poster/figures/wh_sim_batch.png",
+    "raw/sysid-transformers/README.md",
+    "outputs/report_transformer_textbook_for_implementation.md",
+    "raw/ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation.md",
+    "raw/RoboMorph/README.md",
+    "outputs/report_transformer_study_plan.md",
+    "outputs/report_exi_modernization_investigation.md",
+    "outputs/report.md",
     "raw/Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control.md",
+    "raw/In-the-Wild Compliant Manipulation with UMI-FT 1.md",
     "raw/Adaptive Wiping Adaptive contact-rich manipulation through few-shot imitation learning with Force-Torque feedback and pre-trained object representations.md",
     "raw/Learning a High-quality Robotic Wiping Policy Using Systematic Reward Analysis and Visual-Language Model Based Curriculum.md",
     "raw/PBの現状と位置付け.md",
@@ -194,18 +222,12 @@
     "raw/In-the-Wild Compliant Manipulation with UMI-FT.md",
     "raw/2026-04-19_note_force_predictor_from_facial_motion_paper.md",
     "wiki/improving_robotic_imitation_learning_with_predicted_facial_motion_using_transformers.md",
-    "raw/202430182_en.pdf",
     "raw/2026-04-19_discussion_task_direction.md",
     "raw/Bi-HIL Bilateral Control-Based Multimodal Hierarchical Imitation Learning via Subtask-Level Progress Rate and Keyframe Memory for Long-Horizon Contact-Rich Robotic Manipulation.md",
     "raw/research_theme_1_force_prediction_material_imitation.md",
-    "raw/aa86afe61b80c84e835bd1ea72138041c4c5 (1).pdf",
     "raw/PAPER_TITLE.md",
-    "outputs/report.md",
     "papers/PAPER_TITLE.md",
-    "papers",
     "README.md",
-    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md",
-    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning",
-    "LLM_knowledge_spaces"
+    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md"
   ]
 }
