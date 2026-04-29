@@ -47,3 +47,46 @@
 - Added a raw context note clarifying that the predictor and latent design originally came from EXI-Net.
 - Updated the research theme page so the current method discussion is framed as a modernization of EXI-Net rather than a separate line of work.
 - Recorded that the live design question is how to modernize latent inference while preserving deployment-time adaptation of the hidden-dynamics representation.
+
+## [2026-04-24] ingest | DyWA paper note
+
+- Read `raw/2503.16806v2.pdf` and added a reusable wiki summary page for DyWA.
+- Recorded the method structure around world-action modeling, history-based dynamics adaptation, and FiLM conditioning.
+- Added the DyWA paper note to `wiki/index.md`.
+
+## [2026-04-24] query | DyWA vs explicit hidden-physics latent
+
+- Added a comparison note clarifying that DyWA is strong under mixed randomized dynamics but does not cleanly isolate same-geometry hidden-physics identification.
+- Recorded the key result numbers most relevant to the project, including the single-view unknown-state benchmark and the non-uniform-mass real-world cases.
+- Documented the controlled-dynamics evaluation gap that could make this project's thesis sharper than DyWA.
+
+## [2026-04-27] query | Force/wrench preprocessing in local papers
+
+- Scanned the current local paper collection for explicit force or wrench preprocessing such as low-pass filters, Butterworth filters, moving-average smoothing, and FFT/Fourier transforms.
+- Added a reusable note identifying `Adaptive Wiping` and `Adaptive Compliance Policy` as the clear positives.
+- Linked the new note from `wiki/index.md`.
+
+## [2026-04-28] query | AdaWorldPolicy force preprocessing
+
+- Checked the AdaWorldPolicy arXiv HTML for explicit force preprocessing details.
+- Added a reusable note recording that the paper does not appear to use explicit temporal force filtering, but does describe quantile-based normalization for force data.
+- Linked the new note from `wiki/index.md`.
+
+## [2026-04-28] query | AdaWorldPolicy force preprocessing detail update
+
+- Re-checked the newly added local raw text for AdaWorldPolicy.
+- Updated the force-preprocessing note with the newly confirmed detail that quantile-based normalization uses the `1st` and `99th` percentiles.
+- Recorded that clipping is still not explicitly specified in the text.
+
+## [2026-04-28] query | AdaWorldPolicy same-visual hidden-physics gap
+
+- Added a comparison note recording the user assessment that AdaWorldPolicy is mainly evaluated on visual OOD and mixed deployment shifts.
+- Clarified that it does not yet cleanly answer how far force prediction error alone can adapt to same-looking objects with different hidden physical properties.
+- Linked the new note from `wiki/index.md`.
+
+## [2026-04-28] query | AdaWorldPolicy same-looking hidden-physics ambiguity update
+
+- Updated the comparison note with the stronger user assessment that AdaWorldPolicy may face a more fundamental ambiguity when visually identical objects differ only in hidden physical properties.
+- Recorded that the model does not appear to maintain an explicit long-term hidden-physics identity, so it may need to keep re-identifying the object from only very short-horizon force observations.
+- Noted boxes with visually hidden internal state as a representative example where this can matter.
+- Added the user’s original wording verbatim because it may be easier for the user to understand than a normalized summary.

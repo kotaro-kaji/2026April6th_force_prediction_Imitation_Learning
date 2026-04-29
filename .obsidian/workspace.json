@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation.md",
+                "file": "raw/AdaWorldPolicy World-Model-Driven Diffusion Policy with Online Adaptive Learning for Robotic Manipulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation"
+              "title": "AdaWorldPolicy World-Model-Driven Diffusion Policy with Online Adaptive Learning for Robotic Manipulation"
             }
           }
         ]
@@ -185,6 +185,16 @@
   },
   "active": "7fdf797247e4b714",
   "lastOpenFiles": [
+    "raw/バターミルク チャネル 原宿 - TableCheck (テーブルチェック).md",
+    "raw/AdaWorldPolicy World-Model-Driven Diffusion Policy with Online Adaptive Learning for Robotic Manipulation.md",
+    "wiki/adaworldpolicy_vs_same_visual_different_physics_gap.md",
+    "outputs/report_past_wrench_input_opinion.md",
+    "wiki/adaworldpolicy_force_preprocessing.md",
+    "outputs/report_force_wrench_preprocessing.md",
+    "outputs/report_transformer_study_plan.md",
+    "outputs/report_exi_modernization_investigation.md",
+    "outputs/report_transformer_textbook_for_implementation.md",
+    "raw/ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation.md",
     "raw/2026-04-23_message_dp_latent_methods_2_and_3_reframing.md",
     "raw/Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers0810.pdf",
     "raw/sysid-transformers/transformer_sim.py",
@@ -207,11 +217,7 @@
     "raw/sysid-transformers/doc/poster/figures/wh_sim_batch_single.png",
     "raw/sysid-transformers/doc/poster/figures/wh_sim_batch.png",
     "raw/sysid-transformers/README.md",
-    "outputs/report_transformer_textbook_for_implementation.md",
-    "raw/ForceMimic Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation.md",
     "raw/RoboMorph/README.md",
-    "outputs/report_transformer_study_plan.md",
-    "outputs/report_exi_modernization_investigation.md",
     "outputs/report.md",
     "raw/Adaptive Compliance Policy Learning Approximate Compliance for Diffusion Guided Control.md",
     "raw/In-the-Wild Compliant Manipulation with UMI-FT 1.md",
@@ -224,10 +230,6 @@
     "wiki/improving_robotic_imitation_learning_with_predicted_facial_motion_using_transformers.md",
     "raw/2026-04-19_discussion_task_direction.md",
     "raw/Bi-HIL Bilateral Control-Based Multimodal Hierarchical Imitation Learning via Subtask-Level Progress Rate and Keyframe Memory for Long-Horizon Contact-Rich Robotic Manipulation.md",
-    "raw/research_theme_1_force_prediction_material_imitation.md",
-    "raw/PAPER_TITLE.md",
-    "papers/PAPER_TITLE.md",
-    "README.md",
-    "LLM_knowledge_spaces/2026April6th_force_prediction_Imitation_Learning/PAPER_TITLE.md"
+    "raw/research_theme_1_force_prediction_material_imitation.md"
   ]
 }

@@ -22,3 +22,13 @@
 
 - changed files: `outputs/report.md`
 - result: Investigated current IL / VLA literature on failure modes caused by lacking force or tactile sensing, focusing on contact-rich manipulation and benchmark/task implications.
+
+## [2026-04-27 14:35] query | Force/wrench preprocessing in local papers
+
+- changed files: `outputs/report_force_wrench_preprocessing.md`, `outputs/report.md`
+- result: Saved a task-specific report listing local papers that explicitly preprocess force/wrench signals with Butterworth low-pass filtering, moving-average smoothing, or FFT-based encoding, and separated them from papers that only use raw wrench or non-force filtering.
+
+## [2026-04-28 10:26] query | Opinion on whether past wrench should be an input
+
+- changed files: `outputs/report_past_wrench_input_opinion.md`, `outputs/report.md`
+- result: Wrote a task-specific Japanese memo arguing that past wrench should usually be excluded from the main representation-learning input when the goal is hidden-physics latent acquisition, while noting limited helper uses and recommending a history-based estimator/identifier design instead.
