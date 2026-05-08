@@ -30,6 +30,28 @@ The core components are:
 The history encoder is not an explicit per-object latent in the sense of a stored object code `d_i`.
 Instead, dynamics are inferred online from recent trajectories and injected into the policy as an adaptation embedding.
 
+## Adaptation Embedding Size
+
+DyWA does not present a small explicit latent like EXI-Net's `d_i` or IIDA's `z_e`.
+The paper defines an adaptation embedding `z_t` extracted from a history of observation-action tuples, then decodes it into a dynamics embedding used by FiLM.
+
+The most relevant implementation hyperparameters reported in the paper are:
+
+- history length: `5`
+- history decoder: `Conv1d + MaxPool`
+- history decoder channel: `128`
+- FiLM block number: `3`
+
+The released implementation confirms the concrete shape:
+
+- `embed_size = 128`
+- history decoder `num_query_tokens = 1`
+- history encoder output `cond` / `z_t` shape: `[B, 1, 128]`
+- flattened FiLM conditioning vector shape: `[B, 128]`
+
+So, for comparison with this project's explicit latent direction, DyWA is best read as using a **128-dimensional history adaptation embedding**, not an 8- or 9-dimensional compact object latent.
+This is an internal policy-conditioning representation rather than a reusable stored per-object latent.
+
 ## What Is Randomized and Evaluated
 
 In simulation, the paper randomizes:
@@ -114,3 +136,5 @@ but not yet a direct match to an explicit object/material latent story.
 ## Sources
 
 - [raw/2503.16806v2.pdf](../raw/2503.16806v2.pdf)
+- [raw/DyWA](../raw/DyWA)
+- [DyWA GitHub repository](https://github.com/jiangranlv/DyWA/)

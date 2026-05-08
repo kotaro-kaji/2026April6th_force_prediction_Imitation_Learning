@@ -11,8 +11,8 @@ If the contribution is framed mainly as force-aware imitation or compliance-awar
 
 ## Why It Can Be Distinct
 
-The current project summary is centered on learning an object-specific latent `d_i`, then adapting only `d_i` online at test time for unseen physical properties such as mass, center of mass, or compliance.
-In that framing, force prediction is a tool for latent acquisition and latent update, not the end goal itself.
+The current project summary is centered on learning a force estimator and an object/material latent `d_i`, then adapting only `d_i` online at test time for unseen physical properties such as mass, center of mass, or compliance.
+In that framing, measured force/torque is mainly supervision and online feedback for latent update, while the policy should rely on estimated force or the adapted latent rather than recent measured force history.
 That differs from recent work whose main goal is usually better force modulation, stiffness prediction, or compliant execution for a task.
 
 ## Paper-by-Paper Assessment
@@ -63,10 +63,10 @@ Among the four, this is the easiest one to argue against if your framing stays r
 
 ## Bottom Line
 
-You can still say the topic is shifted, but only in a narrow and disciplined way:
+You can still say the topic is distinct, but only in a narrow and disciplined way:
 
 - Not: learning force-aware or compliance-aware imitation for contact-rich manipulation.
-- Yes: learning a compact object-specific latent for hidden physical properties, and adapting that latent online for unseen objects while keeping the policy and dynamics model fixed.
+- Yes: learning a force estimator supervised by measured force/torque, then using force-estimation error to adapt a compact object/material latent online while keeping the policy and estimator fixed.
 
 ## Implication For Task Choice
 
@@ -81,14 +81,14 @@ That is exactly why unseen mass / center-of-mass variants or sponge-hardness var
 ## Safer Claim Style
 
 Safer paper claim:
-"We study test-time identification of object-specific hidden physical properties through a learned latent, and use that latent to adapt imitation policies to unseen objects."
+"We study force-estimation-error-driven identification of object/material properties, and use the adapted latent or estimated force to condition imitation policies for unseen objects."
 
 Less safe claim:
 "We improve contact-rich imitation learning using force information."
 
 ## Sources
 
-- Local project summary: [Research Theme 1: Force Prediction and Material Latent for Imitation Learning](research_theme_1_force_prediction_material_imitation.md)
+- Local project summary: [Research Theme 1: Force Estimation and Material Latent for Imitation Learning](research_theme_1_force_estimation_material_imitation.md)
 - ACP project page: https://adaptive-compliance.github.io/
 - UMI-FT project page: https://umi-ft.github.io/
 - CompACT project page: https://omron-sinicx.github.io/CompACT/

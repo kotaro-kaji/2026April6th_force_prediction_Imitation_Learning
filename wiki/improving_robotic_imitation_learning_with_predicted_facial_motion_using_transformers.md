@@ -81,7 +81,8 @@ So it is not direct evidence for your hidden-physics thesis, but it is useful as
 - injecting that prediction into an ACT-like imitation learning policy
 - showing that dynamic partially changing targets can benefit from short-horizon prediction
 
-For your project, the analogous move would be to predict future force/contact consequences or infer hidden tool/object properties and feed them into policy observations.
+Under the older project framing, the analogous move was to predict future force/contact consequences before control.
+Under the current force-estimation framing, this paper is mainly a precedent for supplying an auxiliary estimated task-relevant signal to an imitation policy, not a direct template for the force estimator.
 
 ## Limits
 

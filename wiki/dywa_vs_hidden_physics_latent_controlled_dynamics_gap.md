@@ -124,5 +124,5 @@ That gap is exactly where your project can make a sharper contribution.
 ## Sources
 
 - [raw/2503.16806v2.pdf](../raw/2503.16806v2.pdf)
-- [Research Theme 1: Force Prediction and Material Latent for Imitation Learning](research_theme_1_force_prediction_material_imitation.md)
+- [Research Theme 1: Force Estimation and Material Latent for Imitation Learning](research_theme_1_force_estimation_material_imitation.md)
 - [2026-04-23 Message: DP latent methods 2 and 3 reframing](../raw/2026-04-23_message_dp_latent_methods_2_and_3_reframing.md)

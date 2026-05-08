@@ -2,8 +2,8 @@
 
 ## Goal
 
-Select a task where the same visible geometry can induce meaningfully different manipulation dynamics through hidden physical properties.
-The task should reward estimating latent physics from short force histories and ideally support faster, more open-loop-like actions after adaptation.
+Select a task where the same visible geometry can induce meaningfully different manipulation dynamics through hidden physical or material properties.
+The task should reward estimating interaction force and adapting a compact latent from force-estimation error, rather than merely replaying a demonstrated trajectory.
 
 ## Current Discussion Status
 
@@ -17,7 +17,7 @@ At the same time, a wiping task with sponges of different stiffness or hardness 
 
 - Same or near-identical appearance, different dynamics.
 - Trajectory replay alone should fail often enough.
-- Force prediction and online latent adaptation should have a clear causal role.
+- Force estimation and online latent adaptation should have a clear causal role.
 - The task should still be practical for simulation data collection and later real-robot execution.
 
 ## Practical Ranking Under The Current Premise
@@ -100,7 +100,7 @@ These are standard contact-rich benchmarks and explicitly involve articulated me
 Why it fits:
 
 - Hidden physical variables such as hinge friction, damping, backlash, or handle resistance matter even when appearance is similar.
-- Force prediction can be meaningful because the required interaction force evolves over the motion.
+- Force estimation can be meaningful because the required interaction force evolves over the motion.
 
 Why it is only fourth:
 

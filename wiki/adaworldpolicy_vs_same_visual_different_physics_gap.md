@@ -2,7 +2,7 @@
 
 ## Question
 
-Does AdaWorldPolicy already cover the core research question of adapting to objects that look the same but have different physical properties, using force prediction error?
+Does AdaWorldPolicy already cover the core research question of adapting to objects that look the same but have different physical properties, using force-estimation error or force-based online feedback?
 
 ## Short Answer
 
@@ -13,7 +13,7 @@ It does use force input and a force predictor, but it does **not** cleanly isola
 
 - same visual appearance
 - different hidden physical properties
-- adaptation driven by force prediction error alone
+- adaptation driven by force-estimation error or force-based latent update alone
 
 This leaves room for a more controlled study focused on hidden physics under matched appearance.
 
@@ -64,14 +64,14 @@ But it does **not** remove the value of a project that is explicitly designed ar
 - same-appearance objects
 - hidden physical variation
 - persistent identification of hidden physics over time
-- a controlled evaluation of adaptation from force prediction error
+- a controlled evaluation of adaptation from force-estimation error or force-only hidden-physics feedback
 
 ## Research Value For This Project
 
 So the research value here remains:
 
 - isolate hidden-physics adaptation from visual OOD adaptation
-- test whether force prediction error alone can identify same-looking but physically different objects
+- test whether force-estimation error or force-only feedback can identify same-looking but physically different objects
 - test whether a persistent latent or longer-horizon memory is needed to avoid confusion across visually identical but physically different objects
 - make the evaluation cleaner than broad mixed-shift settings
 
@@ -79,7 +79,7 @@ So the research value here remains:
 
 - User assessment on 2026-04-28:
   - AdaWorldPolicy mainly studies how to handle visual OOD shifts, and its experiments are centered on that.
-  - Its exploration of how far one can adapt to same-looking objects with different physical properties using force prediction error alone is still insufficient.
+  - Its exploration of how far one can adapt to same-looking objects with different physical properties using force-based feedback alone is still insufficient.
   - A stronger weakness is that when training includes visually identical objects that differ only in hidden physical properties, the model lacks a long-term explicit signal for which physical object it is currently handling.
   - In that case, because it must keep identifying the object from only the most recent one-step or short-horizon force observations, learning may become confused.
   - This is especially relevant for tasks such as manipulating boxes whose internal state is not visually observable.
