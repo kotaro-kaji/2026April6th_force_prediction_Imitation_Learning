@@ -7,3 +7,6 @@
 [submodule "raw/sysid-transformers"]
 	path = raw/sysid-transformers
 	url = https://github.com/forgi86/sysid-transformers
+[submodule "raw/DyWA"]
+	path = raw/DyWA
+	url = https://github.com/jiangranlv/DyWA
