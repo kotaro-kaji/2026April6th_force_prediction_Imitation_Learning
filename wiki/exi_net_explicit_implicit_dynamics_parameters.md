@@ -39,6 +39,33 @@ So the dimensions are:
 
 This distinction matters because the paper argues that separating explicit and implicit dynamics is beneficial: learning all dynamics as implicit parametric biases from scratch becomes harder as the number of parameters increases.
 
+## Network Architecture
+
+EXI-Net's predictive model is not a large or special architecture.
+In the reported experiments, the predictive model is a plain fully connected MLP:
+
+- 3 hidden layers
+- 100 fully connected units per hidden layer
+- ReLU activations
+- mean squared error loss
+- Adam optimizer
+- 100 epochs
+- batch size 128
+
+The recurrent baselines use 100 LSTM units.
+The paper reports that adding recurrent memory to EXI gave little positive impact, while explicit/implicit dynamics conditioning outperformed the recurrent model without dynamics parameters.
+
+For the object-pushing setup, the general model is:
+
+`s_{t+1} = f(s_t, a_t, d_e, d_i)`
+
+But because the state is represented in the object-centered frame, the practical simplified model is closer to:
+
+`Delta s_{t+1} = f(a_t, d_e, d_i)`
+
+So the learned dynamics parameters are not competing with a very high-dimensional observation encoder.
+They are appended directly to a low-dimensional MLP input and are needed to explain different outcomes under the same or similar pushing actions.
+
 ## Relation to This Project
 
 For the current force-estimation/material-latent direction, EXI-Net supports the idea of keeping a compact latent that is optimized online at deployment.
