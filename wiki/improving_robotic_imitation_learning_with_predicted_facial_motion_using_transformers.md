@@ -59,7 +59,15 @@ Reported aggregate metrics include:
 - `Mean ΔV = 0.017`, `Var ΔV = 0.025`
 - `Average SSIM = 0.928`
 
-These outperform the weaker baselines described in the paper.
+Compared with the simple feature-fusion baseline, cross-attention roughly halves the normalized mouth-center error:
+
+- `Mean ΔU`: `0.032 -> 0.015`, about `53%` lower
+- `Mean ΔV`: `0.036 -> 0.017`, about `53%` lower
+- `Var ΔU`: `0.061 -> 0.013`, about `79%` lower
+- `Var ΔV`: `0.130 -> 0.025`, about `81%` lower
+
+It also improves image similarity from `SSIM = 0.818` to `0.928`.
+The image-only baseline has `SSIM = 0.662`, but its landmark error is not reported because landmarks could not be reliably extracted from the blurry predicted images.
 
 ### Imitation learning
 

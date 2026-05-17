@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-17] query | Li-san cross-attention landmark improvement
+
+- Updated the Li-san facial motion prediction note with the simple-fusion vs cross-attention landmark-error comparison.
+- Recorded that cross-attention reduces normalized mouth-center mean errors by about `53%` and variance by about `79-81%`.
+- Clarified that SSIM improves from `0.818` to `0.928`, while the image-only baseline lacks usable landmark-error numbers.
+
+## [2026-05-14] query | Proposed force-imagination online-correctable imitation method
+
+- Added a reusable proposed-method page centered on force imagination and online-correctable imitation learning.
+- Framed measured-vs-imagined force error as the signal for adapting only a compact hidden-physics latent.
+- Linked the page from `wiki/index.md`.
+
 ## [2026-05-08] query | Add CAVIA context-adaptation prior
 
 - Added a CAVIA paper note as a precedent for adapting only low-dimensional context parameters while shared network weights remain fixed.

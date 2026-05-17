@@ -3,6 +3,7 @@
 ## Research Themes
 
 - [Research Theme 1: Force Estimation and Material Latent for Imitation Learning](research_theme_1_force_estimation_material_imitation.md): Force estimation with an object/material latent for adapting imitation policies to unseen physical or material properties.
+- [Proposed Method: Force-Imagination-Based Online-Correctable Imitation Learning](proposed_method_force_imagination_online_correctable_imitation.md): Method framing where imagined force supervises and conditions imitation, while measured-vs-imagined force error updates only a compact hidden-physics latent online.
 - [Overlap With ACP, UMI-FT, CompACT, and ForceMimic](overlap_with_adaptive_compliance_policy_umift_compact_forcemimic.md): Comparison note on whether recent compliant and force-aware imitation papers materially overlap with the object-specific latent direction.
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md): Prior-art scan for force estimation, force-aware imitation, and the remaining gap around force-estimation-error-driven material latent adaptation.
 - [Preventing Hidden-Context Latents From Being Ignored](preventing_hidden_context_latent_ignored.md): Design note on why PB/context variables may be ignored and how EXI-Net, IIDA, and DyWA suggest making hidden-physics latents matter.
