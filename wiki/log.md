@@ -67,7 +67,7 @@
 
 ## [2026-04-19] ingest | Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers
 
-- Read `raw/202430182_en.pdf` and created a reusable wiki summary page.
+- Read `raw/Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers - student report.pdf` and created a reusable wiki summary page.
 - Added the paper note to `wiki/index.md`.
 - Recorded the paper as a precedent for feeding predicted future task-relevant state into an ACT-style imitation learning policy.
 
@@ -91,7 +91,7 @@
 
 ## [2026-04-24] ingest | DyWA paper note
 
-- Read `raw/2503.16806v2.pdf` and added a reusable wiki summary page for DyWA.
+- Read `raw/DyWA Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation.pdf` and added a reusable wiki summary page for DyWA.
 - Recorded the method structure around world-action modeling, history-based dynamics adaptation, and FiLM conditioning.
 - Added the DyWA paper note to `wiki/index.md`.
 
@@ -137,3 +137,9 @@
 - Searched for prior work around force estimation from vision, force-aware imitation learning, and force-error-based online adaptation.
 - Added a reusable note identifying ForceMapping as the closest threat for force-estimator-assisted imitation learning.
 - Recorded that the remaining plausible gap is not force estimation itself, but measured-vs-estimated force error used to update only a compact object/material latent for imitation-policy conditioning.
+
+## [2026-05-17] maintenance | Rename raw paper files
+
+- Renamed unclear raw paper filenames such as arXiv IDs, hashes, and placeholders to title-based filenames.
+- Updated existing raw/wiki references that pointed to the old filenames.
+- Marked the duplicate UMI-FT raw Markdown copy explicitly as a duplicate copy in its filename.

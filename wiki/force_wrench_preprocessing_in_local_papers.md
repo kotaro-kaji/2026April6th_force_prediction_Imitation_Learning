@@ -40,7 +40,7 @@ Evidence:
 
 - `In-the-Wild Compliant Manipulation with UMI-FT`
 - `Bi-HIL Bilateral Control-Based Multimodal Hierarchical Imitation Learning`
-- `Learning Variable Compliance Control From a Few Demonstrations for Bimanual Robot with Haptic Feedback Teleoperation System` (`raw/2406.14990v2 (1).pdf`)
+- `Learning Variable Compliance Control From a Few Demonstrations for Bimanual Robot with Haptic Feedback Teleoperation System` (`raw/Learning Variable Compliance Control From a Few Demonstrations for Bimanual Robot with Haptic Feedback Teleoperation System.pdf`)
 - `Learning a High-quality Robotic Wiping Policy Using Systematic Reward Analysis and Visual-Language Model Based Curriculum`
 - `DyWA: Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation`
 - `SCCRUB: Surface Cleaning Compliant Robot Utilizing Bristles`

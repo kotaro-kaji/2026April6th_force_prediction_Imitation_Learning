@@ -93,4 +93,4 @@ Under the current force-estimation framing, this paper is mainly a precedent for
 
 ## Source
 
-- [raw/202430182_en.pdf](../raw/202430182_en.pdf)
+- [raw/Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers - student report.pdf](../raw/Improving%20Robotic%20Imitation%20Learning%20with%20Predicted%20Facial%20Motion%20Using%20Transformers%20-%20student%20report.pdf)

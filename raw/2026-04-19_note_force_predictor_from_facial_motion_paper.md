@@ -2,7 +2,7 @@
 
 ## Context
 
-This note records a project direction inspired by the paper `202430182_en.pdf`.
+This note records a project direction inspired by the paper `Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers - student report.pdf`.
 
 ## Idea
 
