@@ -1,5 +1,32 @@
 # Wiki Log
 
+## [2026-05-21] query | Add brush sweeping and unknown-CoM prism lift task candidates
+
+- Updated the strict task-search page with two revived candidates from the user.
+- Added sweeping coffee beans with brushes of different stiffness as a feasible xArm7 lab task in the same surface-interaction family as sponge wiping.
+- Added single-arm grasp-and-lift of a long rectangular prism with unknown center of mass as a simulation-friendly task that returns to the hidden-CoM story.
+- Revised the previous "only sponge wiping survives" conclusion into a narrower but stronger task family: visually ambiguous contact-quality tasks, plus a simulation-only hidden-CoM benchmark.
+
+## [2026-05-21] query | xArm7 lab constraint narrows force-imagination task candidates
+
+- Updated the task-search page after the user rejected scraping/polishing, tape/lamination, and brushing as unrealistic for imitation learning with an xArm7 gripper in an ordinary lab setup.
+- Recorded that sponge wiping is now effectively the only surviving practical task under the strict visual-ambiguity and hardware constraints.
+- Clarified that broader surface-interaction framing can remain conceptual, but the first empirical paper should likely center on sponge wiping.
+
+## [2026-05-21] query | Task search beyond sponge wiping for force imagination
+
+- Added a self-critical task-search page evaluating alternatives to sponge wiping under a stricter criterion.
+- Recorded that most candidate tasks are weak because the relevant hidden property becomes visible through motion, deformation, task progress, or failure.
+- Narrowed the strongest domain to visually ambiguous contact-quality tasks, especially wiping/scraping/polishing with hidden compliance.
+- Linked the new task-search page from `wiki/index.md`.
+
+## [2026-05-21] ingest | Prior-art difference between visual world models and force imagination
+
+- Added the user's original memo to `raw/2026-05-21_prior_art_difference_world_model_vs_force_imagination.md`.
+- Added a wiki interpretation page clarifying the distinction from visual world-model-based imitation learning.
+- Recorded the current experimental positioning: PushT is a controlled simulation benchmark, while wiping with different sponge softness is the stronger main task for showing the value of force imagination.
+- Linked the new page from `wiki/index.md`.
+
 ## [2026-05-17] query | Li-san cross-attention landmark improvement
 
 - Updated the Li-san facial motion prediction note with the simple-fusion vs cross-attention landmark-error comparison.

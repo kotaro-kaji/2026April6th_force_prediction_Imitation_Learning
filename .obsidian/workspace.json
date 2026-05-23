@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Deep Predictive Model Learning with Parametric Bias Handling Modeling Difficulties and Temporal Model Changes.md",
+                "file": "raw/STLファイル編集方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Deep Predictive Model Learning with Parametric Bias Handling Modeling Difficulties and Temporal Model Changes"
+              "title": "STLファイル編集方法"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "bd7a454b2ec5f500",
   "lastOpenFiles": [
-    "raw/音声アシスタント開発方法.md",
     "raw/Deep Predictive Model Learning with Parametric Bias Handling Modeling Difficulties and Temporal Model Changes.md",
+    "raw/STLファイル編集方法.md",
+    "raw/音声アシスタント開発方法.md",
     "raw/From system models to class models An in-context learning paradigm.md",
     "raw/Learning Pivoting Manipulation with Force and Vision Feedback Using Optimization-based Demonstrations.md",
     "wiki/force_estimation_latent_adaptation_prior_art.md",
@@ -224,7 +225,6 @@
     "outputs/report_past_wrench_input_opinion.md",
     "wiki/adaworldpolicy_force_preprocessing.md",
     "outputs/report_force_wrench_preprocessing.md",
-    "outputs/report_transformer_study_plan.md",
     "raw/sysid-transformers/doc/slides/fig/proceeding-logo.jpg",
     "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.svg",
     "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.png",

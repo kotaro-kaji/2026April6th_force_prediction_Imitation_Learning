@@ -7,10 +7,12 @@
 - [Overlap With ACP, UMI-FT, CompACT, and ForceMimic](overlap_with_adaptive_compliance_policy_umift_compact_forcemimic.md): Comparison note on whether recent compliant and force-aware imitation papers materially overlap with the object-specific latent direction.
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md): Prior-art scan for force estimation, force-aware imitation, and the remaining gap around force-estimation-error-driven material latent adaptation.
 - [Preventing Hidden-Context Latents From Being Ignored](preventing_hidden_context_latent_ignored.md): Design note on why PB/context variables may be ignored and how EXI-Net, IIDA, and DyWA suggest making hidden-physics latents matter.
+- [Prior-Art Difference: Visual World Models vs Force Imagination](prior_art_difference_visual_world_model_vs_force_imagination.md): Positioning note explaining why PushT alone may be solvable by image-prediction world models, and why wiping with different sponge softness better isolates the value of force imagination.
 
 ## Task Design
 
 - [Task Candidates for Hidden-Physics Imitation Learning](task_candidates_for_hidden_com_material_latent.md): Ranked alternatives to box standing, emphasizing tasks where hidden physics matters beyond trajectory replay.
+- [Task Search Beyond Sponge Wiping for Force Imagination](task_search_beyond_sponge_wiping_for_force_imagination.md): Strict self-critical narrowing of tasks where force imagination is better motivated than visual world-model prediction.
 
 ## Paper Notes
 
