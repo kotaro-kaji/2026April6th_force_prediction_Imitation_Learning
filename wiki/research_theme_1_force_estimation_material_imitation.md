@@ -24,6 +24,10 @@ Measured force/torque remains valuable as supervision and as an online adaptatio
 This framing is more defensible against recent force-aware imitation and online world-model papers, because the contribution is not simply "use force" or "predict future force."
 The intended contribution is force-estimation-error-driven adaptation of a compact hidden-physics/material latent.
 
+As of 2026-06-16, the earlier idea of adding explicit binary tactile/contact-state gating is no longer part of the current method.
+The research theme should not be framed around contact/no-contact classification.
+The current focus is force-estimation-error-driven adaptation of a compact hidden-physics latent and its use by imitation learning.
+
 ## Task Selection Constraint
 
 The current box-standing setup is not yet ideal as a core benchmark because, when the outer geometry is fixed, the task can still often be solved by replaying a successful trajectory.
@@ -41,11 +45,12 @@ At the method level, the active design question is how to combine force estimati
 
 ## Open Questions
 
-- Estimate current/interaction force only, or also estimate contact mode variables such as slip, sticking, or contact state.
+- Estimate current/interaction force only, or also estimate contact-mode-related quantities such as slip or sticking.
 - Whether measured-vs-estimated force error is sufficient to adapt `d_i` online when model weights are frozen.
 - Whether the best implementation is explicit test-time latent optimization, encoder-based latent inference, or a hybrid of both.
 - Whether uncertainty-conditioned action aggressiveness is tractable as an extension.
 - Whether the project should stay centered on hidden mass / center of mass, or broaden toward hidden compliance through sponge hardness in wiping.
+- Whether any contact-mode information is useful as an auxiliary prediction target, without making explicit contact classification a core method component.
 
 ## Source
 
@@ -54,6 +59,7 @@ At the method level, the active design question is how to combine force estimati
 - [raw/2026-04-21_context_exi_net_modernization.md](../raw/2026-04-21_context_exi_net_modernization.md)
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md)
 - [CAVIA: Fast Context Adaptation via Meta-Learning](cavia_fast_context_adaptation_meta_learning.md)
+- [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md)
 - User clarification on 2026-04-17: the key problem is to avoid tasks that are still solvable by trajectory reproduction alone when geometry is unchanged.
 - User clarification on 2026-04-19: dual-arm teleoperation replay may already solve box uprighting, so unseen center of mass and mass may be largely irrelevant there.
 - User clarification on 2026-04-19: promising next directions currently include unseen-physics PushT and wiping with sponges of different hardness.

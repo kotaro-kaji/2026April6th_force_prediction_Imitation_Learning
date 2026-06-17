@@ -35,6 +35,10 @@ The deployment-time adaptation rule is:
 
 This follows the CAVIA-style principle of adapting only a low-dimensional context variable instead of updating the full model online.
 
+Earlier notes considered adding a minimal binary contact-state signal to gate latent updates.
+As of 2026-06-16, this is treated as a legacy idea and is not part of the current proposed method.
+The current method should not depend on explicit contact/no-contact classification.
+
 ## Why Force Imagination
 
 Force imagination is useful because contact-rich manipulation often depends on hidden physical properties that are not directly visible.
@@ -49,6 +53,29 @@ Force imagination gives the policy a physically grounded internal signal:
 
 The important point is that the imagined force is not only an auxiliary prediction.
 It is the error signal used to correct the latent that conditions later policy behavior.
+
+## Latest Task Framing: Regrasping
+
+The latest direction makes the role of the latent more specific.
+The strongest use case is not a task where force can be observed continuously and used for immediate reactive correction.
+It is a task where contact force first identifies hidden physics, and the policy must then use the adapted latent during a later regrasping, support-point selection, or lifting phase where direct force information is absent, delayed, or insufficient.
+
+This reframes the method as:
+
+- use contact to infer hidden center of mass or mass distribution,
+- store that inference in a compact latent,
+- use the latent to decide how to hold, regrasp, or lift the object after the informative contact phase.
+
+This makes long-object lifting with unknown center of mass and dual-arm non-prehensile box lifting more central candidates than sponge wiping or brush sweeping.
+
+Earlier versions emphasized binary tactile contact as a phase signal.
+That design has been removed from the current framing.
+The current proposal should be described without assuming an explicit contact classifier or binary contact gate.
+
+As of 2026-06-13, the task story should not be driven by related-work differentiation alone.
+The central problem is how to make a robot retain internal object-property information and use it for human-like regrasping.
+The current concrete task direction is a thin pouch pinched at the edge, lifted or stood up from a flat table pose, and inserted into a slot or flexible opening.
+This is preferred over a simple long-object center-of-mass lift if the latter can be solved by rule-based grasp-position search.
 
 ## Difference From Ordinary Force-Aware Imitation
 
@@ -87,8 +114,10 @@ The task should fail or degrade under simple trajectory replay.
 Strong candidates include:
 
 - PushT-like manipulation with hidden mass, friction, or center of mass changes,
-- wiping with visually similar sponges of different hardness or stiffness,
-- object interaction where mechanism resistance changes while geometry remains similar.
+- thin-pouch pinch, reorientation, and insertion into a slot or flexible opening,
+- one-handed lifting or regrasping of a long object with unknown center of mass,
+- dual-arm non-prehensile box lifting with shifted internal center of mass,
+- wiping or brush sweeping as secondary examples where force helps, but where reactive force control may be a stronger competing explanation.
 
 The most important ablations are:
 
@@ -104,3 +133,6 @@ The most important ablations are:
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md)
 - [Preventing Hidden-Context Latents From Being Ignored](preventing_hidden_context_latent_ignored.md)
 - [CAVIA: Fast Context Adaptation via Meta-Learning](cavia_fast_context_adaptation_meta_learning.md)
+- [Regrasping as the Core Force-Imagination Task](regrasping_as_core_force_imagination_task.md)
+- [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md)
+- [Internal-Property Memory for Regrasping](internal_property_memory_for_regrasping.md)

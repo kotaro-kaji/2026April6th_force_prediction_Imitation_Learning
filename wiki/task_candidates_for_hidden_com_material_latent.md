@@ -7,6 +7,15 @@ The task should reward estimating interaction force and adapting a compact laten
 
 ## Current Discussion Status
 
+As of 2026-06-13, the newest direction returns to the problem setting rather than related-work differentiation:
+the project is about making a robot retain internal object-property information and use it for regrasping, like a human.
+The current concrete task candidate is a thin pouch that starts flat on the table, is pinched at an edge, lifted or stood up, and inserted into a slot or flexible opening.
+This is preferred over a clean long-object center-of-mass lift if that lift can be solved by rule-based probing or binary-search-like grasp-location adjustment.
+
+As of 2026-06-10, the latest direction shifts the main task story toward **regrasping and lifting after hidden-physics identification**.
+The core argument is that force information is most valuable when it is used to infer hidden center of mass or mass distribution during contact, then carried forward into a later action phase where direct force information is absent or insufficient.
+This makes long-object lifting with unknown center of mass and dual-arm non-prehensile box lifting the most live task candidates.
+
 This page should currently be read as a narrowing note rather than a broad recommendation list.
 As of 2026-04-19, the user's working premise is that dual-arm box uprighting is probably too easy to solve by replaying a dual-arm teleoperation trajectory.
 In that task, unseen center of mass and total mass may be close to irrelevant in practice.
@@ -22,7 +31,92 @@ At the same time, a wiping task with sponges of different stiffness or hardness 
 
 ## Practical Ranking Under The Current Premise
 
-### 1. Unknown-CoM PushT or constrained planar pushing
+### 1. Thin pouch pinch and insertion into a slot or flexible opening
+
+This is currently the strongest concrete candidate.
+The object is a thin pouch-like item lying flat on the table.
+The robot pinches an edge, lifts or stands it up, and inserts it into a slot, bag opening, backpack opening, or other container.
+
+Why it fits:
+
+- Pinching avoids requiring the G1 gripper to open around the full object width.
+- The task requires reorientation and possibly regrasping, not just lifting.
+- A flexible pouch or flexible receiving container makes simple model-based rigid-body planning weaker.
+- The task better matches the original purpose of imitation learning: handling manipulation where exact modeling is difficult.
+
+Design recommendation:
+
+- Start with a clearly defined pouch object and initial flat pose.
+- Define whether the target opening is rigid, passive flexible, or held open by a second arm.
+- Use success metrics such as inserted depth, final orientation, no drop, no severe folding, and no container collapse.
+- Vary only one hidden factor at first, such as pouch stiffness, pouch thickness, weight distribution, or opening stiffness.
+
+### 2. Dual-arm pouch insertion with flexible container opening
+
+This is a stronger but more complex version of the pouch task.
+One arm pinches and manipulates the pouch, while the other arm opens or stabilizes a flexible container.
+
+Why it fits:
+
+- The second arm gives a natural role beyond just making the task larger.
+- The flexible opening creates a reason that pure model-based insertion is hard.
+- The task can express human-like regrasping and object-property retention more clearly than rigid-body lifting.
+
+Main weakness:
+
+- The experimental setup and demonstrations are more complex.
+- The container behavior must be controlled enough that failures are interpretable.
+
+### 3. One-handed long-object lift with unknown center of mass
+
+This is currently the cleanest candidate under the latest direction.
+The object is a remote-control-like long rectangular prism with fixed external appearance but shifted internal center of mass.
+The robot must use contact or a short probing lift to infer the center of mass, then choose a grasp, regrasp, or lifting strategy.
+
+Why it fits:
+
+- The hidden variable is clear and physically meaningful.
+- The correct grasp or support point depends on the hidden center of mass.
+- Force/torque during early contact is informative.
+- The policy must carry the inferred latent into the later lift or regrasp phase.
+- Failure can be measured by tilt, slip, excessive torque, failed lift, or poor grasp location.
+
+Design recommendation:
+
+- Allow only one short probing interaction before the final lift.
+- Keep the external geometry and texture fixed.
+- Penalize excessive tilt, slip, or wrist torque.
+- Compare against policies that use current observations or recent force history without a persistent latent.
+
+Latest caveat:
+
+- This task may be too rule-solvable.
+- If a binary-search-like probing strategy can find the grasp point, then the need for imitation learning becomes weak.
+- It is better used as a diagnostic benchmark than as the main paper task unless redesigned.
+
+### 4. Dual-arm non-prehensile box lifting with shifted internal center of mass
+
+This is the most intuitive real-world candidate.
+The robot lifts a visually similar box whose internal center of mass may be shifted, and must choose two contact/support points that balance the moment.
+
+Why it fits:
+
+- The task matches the motivating scenario of moving boxes with unknown contents.
+- Same-looking boxes can require different support points.
+- Force feedback from initial contact can identify the latent, while the later lift benefits from remembering it.
+
+Main weakness:
+
+- On a fixed-base robot, unstable lifting may not naturally create dramatic failures.
+- Success-rate differences may be hard to show unless the evaluation makes instability consequential.
+
+Design recommendation:
+
+- Evaluate final tilt, oscillation, peak wrench, correction count, lift time, and stability under a standardized disturbance.
+- Use a repeatable commanded acceleration or trajectory tolerance instead of an ad hoc human push.
+- Treat this as promising but experimentally riskier than the one-handed long-object task.
+
+### 5. Unknown-CoM PushT or constrained planar pushing
 
 This is currently the clearest direction if the project stays centered on hidden mass and center of mass.
 Keeping the external shape fixed while shifting internal mass directly changes how the object rotates during pushing.
@@ -43,7 +137,7 @@ Design recommendation:
 - Do not use free-space pushing only.
 - Use a corridor, narrow goal region, or rotation-sensitive target so that incorrect early pushes cannot be cheaply repaired.
 
-### 2. Unknown-CoM edge pivoting / tumbling to a target pose
+### 6. Unknown-CoM edge pivoting / tumbling to a target pose
 
 This is no longer a preferred direction under the current premise.
 Instead of merely pushing to a planar goal, the robot repeatedly tilts and pivots the same-looking box around edges or corners to reach a target upright or reoriented pose.
@@ -71,7 +165,7 @@ Design recommendation:
 - Randomize internal CoM while fixing outer shape and contact geometry.
 - Make success depend on final orientation and position, not only eventual toppling outcome.
 
-### 3. Constrained pushing through a slot, gate, or narrow corridor with unknown CoM
+### 7. Constrained pushing through a slot, gate, or narrow corridor with unknown CoM
 
 This remains relevant mainly as a variant of the PushT direction, not as a separate research story.
 The object must be pushed through a geometry that leaves little room for correcting rotation bias.
@@ -92,7 +186,7 @@ Design recommendation:
 - Keep the horizon short and penalties sharp.
 - Prefer one decisive push plus one recovery action over many tiny corrections.
 
-### 4. Articulated object opening with hidden friction or resistance
+### 8. Articulated object opening with hidden friction or resistance
 
 Examples are drawer opening, door opening, and faucet turning.
 These are standard contact-rich benchmarks and explicitly involve articulated mechanisms.
@@ -126,17 +220,17 @@ The main tradeoff is that this shifts the story away from hidden center of mass 
 
 ## Bottom Line
 
-Under the current working premise, the path is much narrower than this page originally assumed.
-The main issue is not just to find a contact-rich task, but to find one where replaying a teleoperated dual-arm trajectory is not already enough.
+Under the latest working premise, the path is narrower and more specific than "contact-rich manipulation."
+The main issue is to find a task where force-derived hidden-physics information must be remembered for a later regrasping, support selection, or lifting decision.
 
-1. Unseen-CoM / unseen-mass PushT with a stricter success geometry.
-2. Wiping with sponges of different stiffness or hardness, if broadening from hidden mass toward hidden compliance is acceptable.
-3. A constrained pushing variant only if it is clearly still part of the same pushing story.
+1. Thin pouch pinch, reorientation, and insertion into a slot or flexible opening.
+2. Dual-arm pouch insertion where the second arm opens or stabilizes a flexible container.
+3. One-handed long-object lift or regrasping with unknown center of mass as a secondary diagnostic benchmark.
 
 At the moment, the two live directions are:
 
-- PushT, if the project should keep center of mass and mass as the hidden variables.
-- Wiping with varied sponge hardness, if the project can broaden toward hidden compliance as the latent factor.
+- thin-pouch pinch insertion, if the project should prioritize a task where imitation learning is naturally motivated;
+- dual-arm flexible-container insertion, if the project should emphasize deformable container interaction and can keep the setup controlled.
 
 ## References
 
@@ -146,3 +240,5 @@ At the moment, the two live directions are:
 - Contact-rich insertion as a task family with nonlinear low-clearance trajectories and varying force requirements: [An Adaptive Imitation Learning Framework for Robotic Complex Contact-Rich Insertion Tasks](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.777363/full)
 - Wiping with varying sponge properties and surface heights: [Adaptive Wiping](https://www.catalyzex.com/paper/adaptive-wiping-adaptive-contact-rich)
 - Benchmark examples for articulated manipulation: [ManiSkill2 task suite](https://maniskill2.github.io/) and [OpenCabinetDrawer documentation](https://maniskill.readthedocs.io/en/latest/api/mani_skill/envs/tasks/mobile_manipulation/open_cabinet_drawer/index.html)
+- Latest direction note: [Regrasping as the Core Force-Imagination Task](regrasping_as_core_force_imagination_task.md)
+- Latest June 13 direction: [Internal-Property Memory for Regrasping](internal_property_memory_for_regrasping.md)

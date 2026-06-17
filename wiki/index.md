@@ -8,6 +8,9 @@
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md): Prior-art scan for force estimation, force-aware imitation, and the remaining gap around force-estimation-error-driven material latent adaptation.
 - [Preventing Hidden-Context Latents From Being Ignored](preventing_hidden_context_latent_ignored.md): Design note on why PB/context variables may be ignored and how EXI-Net, IIDA, and DyWA suggest making hidden-physics latents matter.
 - [Prior-Art Difference: Visual World Models vs Force Imagination](prior_art_difference_visual_world_model_vs_force_imagination.md): Positioning note explaining why PushT alone may be solvable by image-prediction world models, and why wiping with different sponge softness better isolates the value of force imagination.
+- [Regrasping as the Core Force-Imagination Task](regrasping_as_core_force_imagination_task.md): Latest task-direction note reframing force imagination around carrying hidden-physics information into regrasping or lifting phases where direct force evidence is absent.
+- [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md): Superseded June 11 idea about binary tactile/contact-state gating; this is no longer part of the current proposed method.
+- [Internal-Property Memory for Regrasping](internal_property_memory_for_regrasping.md): Latest June 13 framing that returns the project to human-like retention of internal object properties for regrasping, with thin-pouch pinch-and-insertion as the current concrete task direction.
 
 ## Task Design
 
