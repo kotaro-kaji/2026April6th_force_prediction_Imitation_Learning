@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/接触リッチ模倣学習 2.md",
+                "file": "raw/ネットワーク設計の提案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "接触リッチ模倣学習 2"
+              "title": "ネットワーク設計の提案"
+            }
+          },
+          {
+            "id": "bc8082d6973b9bc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/Unified World Models Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Unified World Models Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,14 +198,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "bd7a454b2ec5f500",
+  "active": "bc8082d6973b9bc7",
   "lastOpenFiles": [
+    "更新バージョン.md",
+    "raw/Unified World Models Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets.md",
+    "raw/ネットワーク設計の提案.md",
+    "raw/2205.09991v2.pdf",
+    "raw/2106.02445v1.pdf",
+    "raw/Development of a Humanoid Nursing Care Robot and Realization of Quantitative Pouring Operation.md",
+    "raw/R014469 1.pdf",
+    "raw/R014469.pdf",
+    "raw/接触リッチ模倣学習 2.md",
     "wiki/internal_property_memory_for_regrasping.md",
     "raw/バイナリ型触覚の重要性。6月11日に気がついたこと。.md",
-    "raw/接触リッチ模倣学習 2.md",
     "raw/2309.04640v1.pdf",
     "wiki/binary_tactile_contact_signal.md",
-    "Untitled.md",
     "raw/Object Recognition, Dynamic Contact Simulation, Detection, and Control of the Flexible Musculoskeletal Hand Using a Recurrent Neural Network with Parametric Bias.md",
     "raw/Industrial Dual-Arm Box Handling via Online Inertial Estimation and Convex Wrench Optimization.md",
     "raw/接触リッチ模倣学習 1.md",
@@ -216,14 +238,7 @@
     "raw/DyWA/dywa/src/util/vis/win_o3d.py",
     "raw/DyWA/dywa/src/util/vis/pcd.py",
     "raw/DyWA/dywa/src/util/vis/mplots.py",
-    "raw/DyWA/dywa/src/util/vis/mesh.py",
-    "raw/DyWA/dywa/src/util/vis/img.py",
-    "raw/DyWA/dywa/src/util/vis/flow.py",
-    "raw/DyWA/dywa/src/util/vis/ecdf.py",
     "raw/DyWA/dywa/src/train/README.md",
-    "raw/DyWA/dywa/src/models/rl/README.md",
-    "raw/DyWA/dywa/src/models/README.md",
-    "raw/DyWA/dywa/src/env/env/README.md",
     "raw/DyWA/dywa/src/data/assets/crm-panda/meshes/visual/54d441d1ea9fb2b9.jpg",
     "raw/sysid-transformers/doc/slides/fig/proceeding-logo.jpg",
     "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.svg",
