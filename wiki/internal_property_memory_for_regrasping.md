@@ -152,4 +152,4 @@ Only after this is fixed should the method decide whether it needs:
 
 ## Source
 
-- [raw/接触リッチ模倣学習 2.md](../raw/%E6%8E%A5%E8%A7%A6%E3%83%AA%E3%83%83%E3%83%81%E6%A8%A1%E5%80%A3%E5%AD%A6%E7%BF%92%202.md)
+- [thoughts/接触リッチ模倣学習 2.md](../thoughts/%E6%8E%A5%E8%A7%A6%E3%83%AA%E3%83%83%E3%83%81%E6%A8%A1%E5%80%A3%E5%AD%A6%E7%BF%92%202.md)

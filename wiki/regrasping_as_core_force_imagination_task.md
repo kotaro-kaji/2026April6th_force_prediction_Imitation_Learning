@@ -143,6 +143,6 @@ That idea is now deprecated; the current task framing should stand without expli
 
 ## Source
 
-- [raw/接触リッチ模倣学習.md](../raw/%E6%8E%A5%E8%A7%A6%E3%83%AA%E3%83%83%E3%83%81%E6%A8%A1%E5%80%A3%E5%AD%A6%E7%BF%92.md)
+- [thoughts/接触リッチ模倣学習.md](../thoughts/%E6%8E%A5%E8%A7%A6%E3%83%AA%E3%83%83%E3%83%81%E6%A8%A1%E5%80%A3%E5%AD%A6%E7%BF%92.md)
 - [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md)
 - [Internal-Property Memory for Regrasping](internal_property_memory_for_regrasping.md)

@@ -54,9 +54,9 @@ At the method level, the active design question is how to combine force estimati
 
 ## Source
 
-- [raw/research_theme_1_force_prediction_material_imitation.md](../raw/research_theme_1_force_prediction_material_imitation.md)
-- [raw/2026-04-19_discussion_task_direction.md](../raw/2026-04-19_discussion_task_direction.md)
-- [raw/2026-04-21_context_exi_net_modernization.md](../raw/2026-04-21_context_exi_net_modernization.md)
+- [thoughts/research_theme_1_force_prediction_material_imitation.md](../thoughts/research_theme_1_force_prediction_material_imitation.md)
+- [thoughts/2026-04-19_discussion_task_direction.md](../thoughts/2026-04-19_discussion_task_direction.md)
+- [thoughts/2026-04-21_context_exi_net_modernization.md](../thoughts/2026-04-21_context_exi_net_modernization.md)
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md)
 - [CAVIA: Fast Context Adaptation via Meta-Learning](cavia_fast_context_adaptation_meta_learning.md)
 - [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md)

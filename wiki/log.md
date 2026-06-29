@@ -8,7 +8,7 @@
 
 ## [2026-06-13] ingest | Internal-property memory for regrasping and pouch insertion
 
-- Read `raw/接触リッチ模倣学習 2.md` as the latest project-direction note.
+- Read `thoughts/接触リッチ模倣学習 2.md` as the latest project-direction note.
 - Added a wiki page reframing the project around human-like retention of internal object properties for regrasping, rather than method complexity added only for AdaWorldPolicy differentiation.
 - Recorded the current concrete task candidate: thin pouch edge pinch, reorientation from a flat table pose, and insertion into a slot or flexible opening.
 - Recorded the advisor critique that long-object unknown-center-of-mass lifting may be too rule-solvable to justify imitation learning as the main task.
@@ -16,7 +16,7 @@
 
 ## [2026-06-11] ingest | Binary tactile contact signal as core interaction evidence
 
-- Read `raw/バイナリ型触覚の重要性。6月11日に気がついたこと。.md`.
+- Read `thoughts/バイナリ型触覚の重要性。6月11日に気がついたこと。.md`.
 - Added a high-importance wiki page recording the insight that contact occurrence should not be inferred from vision alone.
 - Framed low-resolution or binary tactile contact as a core signal for hidden-physics identification, complementary to force/torque.
 - Updated the main research theme, proposed-method page, and regrasping task page to include binary contact state as a gating/context signal for latent updates.
@@ -24,7 +24,7 @@
 
 ## [2026-06-10] ingest | Regrasping as the core force-imagination task
 
-- Read `raw/接触リッチ模倣学習.md` as the latest project-direction note.
+- Read `thoughts/接触リッチ模倣学習.md` as the latest project-direction note.
 - Added a reusable wiki page reframing the method around carrying force-derived hidden-physics information into regrasping or lifting phases where direct force information is absent or insufficient.
 - Updated the proposed-method page so regrasping, long-object lifting, and dual-arm non-prehensile box lifting are the latest main task candidates.
 - Updated the task-candidate page to demote sponge/brush surface interaction and foreground one-handed unknown-CoM lifting plus dual-arm non-prehensile box lifting.
@@ -52,7 +52,7 @@
 
 ## [2026-05-21] ingest | Prior-art difference between visual world models and force imagination
 
-- Added the user's original memo to `raw/2026-05-21_prior_art_difference_world_model_vs_force_imagination.md`.
+- Added the user's original memo to `thoughts/2026-05-21_prior_art_difference_world_model_vs_force_imagination.md`.
 - Added a wiki interpretation page clarifying the distinction from visual world-model-based imitation learning.
 - Recorded the current experimental positioning: PushT is a controlled simulation benchmark, while wiping with different sponge softness is the stronger main task for showing the value of force imagination.
 - Linked the new page from `wiki/index.md`.

@@ -81,7 +81,7 @@ The central question becomes whether force imagination is useful when the hidden
 
 ## Source
 
-- Raw user note: [2026-05-21_prior_art_difference_world_model_vs_force_imagination.md](../raw/2026-05-21_prior_art_difference_world_model_vs_force_imagination.md)
+- Thought note: [2026-05-21_prior_art_difference_world_model_vs_force_imagination.md](../thoughts/2026-05-21_prior_art_difference_world_model_vs_force_imagination.md)
 - Related pages:
   - [Proposed Method: Force-Imagination-Based Online-Correctable Imitation Learning](proposed_method_force_imagination_online_correctable_imitation.md)
   - [AdaWorldPolicy vs Same-Visual Different-Physics Gap](adaworldpolicy_vs_same_visual_different_physics_gap.md)
