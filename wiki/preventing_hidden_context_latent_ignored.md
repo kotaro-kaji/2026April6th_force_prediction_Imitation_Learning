@@ -44,6 +44,23 @@ Its implementation uses a 128-dimensional history adaptation representation and 
 The useful lesson is that hidden dynamics can be made more influential by using the inferred embedding to modulate internal features.
 Its ablation also suggests that world modeling, dynamics adaptation, and FiLM conditioning work best together.
 
+### Stochastic RNNPB
+
+Hwang and Ahmadi replace each deterministic, sequence-level PB with a Gaussian parameterized by `mu` and `sigma`.
+They sample the PB through the VAE reparameterization trick, keep one sample fixed across a sequence, and train with reconstruction loss plus a weighted KL divergence to a unit Gaussian.
+
+During novel-sequence recognition, the shared network weights remain fixed while only `mu` and `sigma` are optimized using reconstruction error.
+This is a direct precedent for the project's intended update boundary:
+
+```text
+freeze shared force estimator or world model
+update only the compact material-PB distribution from prediction error
+```
+
+The source paper applies this mechanism to motion-sequence identity rather than hidden physical properties.
+For the present project, `Variational Parametric Bias (VPB)` is a useful project-defined name for the corresponding material latent when both reparameterized sampling and KL regularization are used.
+The paper itself calls the method stochastic RNNPB and does not introduce the acronym `VPB`.
+
 ## Practical Failure Modes
 
 - The dataset does not contain controlled pairs where the same visible state/action requires different predictions because of hidden physics.
@@ -76,4 +93,5 @@ Its ablation also suggests that world modeling, dynamics adaptation, and FiLM co
 - [IIDA: Context Is Everything for Implicit Identification](iida_context_is_everything_implicit_identification.md)
 - [DyWA: Dynamics-adaptive World Action Model](dywa_dynamics_adaptive_world_action_model_for_generalizable_non_prehensile_manipulation.md)
 - [DyWA vs Explicit Hidden-Physics Latent](dywa_vs_hidden_physics_latent_controlled_dynamics_gap.md)
+- [Stochastic RNNPB and Variational Parametric Bias](stochastic_rnnpb_variational_parametric_bias.md)
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md)

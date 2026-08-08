@@ -200,6 +200,8 @@
   },
   "active": "bc8082d6973b9bc7",
   "lastOpenFiles": [
+    "wiki/feedback_world_model_precise_guidance_diffusion_policy.md",
+    "raw/Feedback World Model Enables Precise Guidance of Diffusion Policy.pdf",
     "更新バージョン.md",
     "raw/Unified World Models Coupling Video and Action Diffusion for Pretraining on Large Robotic Datasets.md",
     "raw/ネットワーク設計の提案.md",
@@ -237,8 +239,6 @@
     "raw/DyWA/fig",
     "raw/DyWA/dywa/src/util/vis/win_o3d.py",
     "raw/DyWA/dywa/src/util/vis/pcd.py",
-    "raw/DyWA/dywa/src/util/vis/mplots.py",
-    "raw/DyWA/dywa/src/train/README.md",
     "raw/DyWA/dywa/src/data/assets/crm-panda/meshes/visual/54d441d1ea9fb2b9.jpg",
     "raw/sysid-transformers/doc/slides/fig/proceeding-logo.jpg",
     "raw/sysid-transformers/doc/slides/fig/architecture/encoder_decoder_architecture.svg",

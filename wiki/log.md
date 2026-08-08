@@ -6,6 +6,49 @@
 - Recorded its future image-feature prediction and online visual-latent feedback as a close visual-only baseline for the project.
 - Noted the remaining distinction around force-based correction and persistent hidden-physics memory.
 
+## [2026-07-31] ingest | Pedestrian trajectory prediction coordinate normalization
+
+- Added arXiv:2010.05796, `Pedestrian Trajectory Prediction with Convolutional Neural Networks`, to `raw/`.
+- Verified the 35-page PDF metadata, extracted text, and SHA-256 checksum.
+- Recorded its controlled comparison of raw absolute, first-observation-relative, latest-observation-relative, and consecutive-displacement coordinate representations.
+- Noted that the latest-observation origin gives the lowest average displacement error for both Conv1D and LSTM predictors, while the Conv1D first-origin representation has a slightly better final displacement error.
+- Connected the result to direct multi-horizon residual prediction from one latest observation, while preserving the caveat that arbitrary pedestrian-scene origins differ from a normalized robot workspace.
+- Updated the comprehensive raw audit from 39 files / 34 research works to 40 files / 35 research works.
+
+## [2026-07-31] query | Comprehensive raw audit for absolute versus residual prediction
+
+- Audited all 39 top-level files in `raw/`, consolidating exact duplicates, alternate formats, and two documents for the same facial-prediction study into 34 distinct research works.
+- Inspected the `dynamical-metalearning`, `RoboMorph`, `sysid-transformers`, and `DyWA` code repositories for their actual future-state targets.
+- Classified semantic future outcomes separately from direct regression outputs and diffusion/flow-matching noise or vector-field targets.
+- Identified AdaWorldPolicy as a Tier-1 reference for the intended future multimodal problem, while recording that it does not compare direct absolute regression against temporal residual prediction and does not maintain an explicit persistent `z_phys`.
+- Added the active-perception MTRNN, HADYNET, and DSSP evidence to the main design-decision page.
+- Retained the recommendation of an absolute external contract, an internal residual state/image head, an absolute wrench head, and a frozen deterministic image encoder for the first VAE experiment.
+- Recorded that a residual skip makes the zero-residual persistence solution explicit, so `z_phys` must be evaluated against persistence and shuffled/wrong-latent baselines on motion- and contact-informative windows.
+
+## [2026-07-31] query | Absolute interface with internal residual prediction
+
+- Compared absolute and delta prediction formulations against EXI-Net, EDO-Net, IIDA, DyWA, DPMPB, Adaptive Wiping, AdaWorldPolicy, Unified World Models, and stochastic RNNPB.
+- Recorded that the local literature uses both formulations according to the state representation and output role rather than enforcing one global convention.
+- Recommended one absolute external interface and teacher format with an internal residual state/image-latent head.
+- Documented use of a fixed VAE posterior mean, the extra variance caused by differencing independent samples, manifold-aware pose residuals, absolute wrench prediction, and direct multi-horizon residuals relative to one latest observation.
+- Added evaluation criteria centered on whether `z_phys` is actually used and identifies hidden physics, not only on future-state prediction error.
+
+## [2026-07-30] ingest | Stochastic RNNPB and Variational Parametric Bias
+
+- Added the official arXiv PDF `A Novel Framework for Learning Stochastic Representations for Sequence Generation and Recognition` to `raw/`.
+- Recorded how the paper represents sequence-level PB as a Gaussian, uses reparameterized sampling and KL regularization during training, and freezes shared network weights while adapting only `mu` and `sigma` during recognition.
+- Defined `Variational Parametric Bias (VPB)` as project terminology, explicitly distinguishing it from the paper's own names `stochastic RNNPB` and `stochastic PB`.
+- Connected the method to force-estimation-error-driven adaptation of a compact material latent while preserving the limitation that the paper evaluates motion-sequence identity rather than hidden physical properties.
+- Updated the hidden-context-latent design note, main research-theme page, and wiki index.
+
+## [2026-07-30] query | Single-arm pouch vs dual-arm box decision fork
+
+- Recorded the user clarification that the pouch task requires primarily visual future-state prediction, while tilt-minimizing dual-arm box lifting requires primarily force/torque prediction.
+- Added a decision page recommending the single-arm pouch under the current two-option choice, with the explicit consequence that the main thesis would pivot toward visual predictive imitation learning.
+- Identified the May 2026 paper `Industrial Dual-Arm Box Handling via Online Inertial Estimation and Convex Wrench Optimization` as very close prior art for the box task: it estimates unknown mass and center of mass from measured wrenches and optimizes dual-arm contact wrenches for stable lifting.
+- Recorded that, if force imagination must remain the central contribution, neither current task is satisfactory and a third task should be sought rather than combining the two.
+- Defined a minimum pouch go/no-go experiment against a current-observation imitation baseline.
+
 ## [2026-06-16] maintenance | Mark binary contact-state gating as legacy
 
 - Updated the proposed-method, research-theme, regrasping, internal-property-memory, and index pages so explicit binary tactile/contact-state gating is no longer presented as part of the current method.

@@ -47,6 +47,7 @@ At the method level, the active design question is how to combine force estimati
 
 - Estimate current/interaction force only, or also estimate contact-mode-related quantities such as slip or sticking.
 - Whether measured-vs-estimated force error is sufficient to adapt `d_i` online when model weights are frozen.
+- Whether the material latent should remain a deterministic point estimate or become a project-defined Variational Parametric Bias (VPB), represented by `q(p) = N(mu, diag(sigma^2))` and trained through reparameterized sampling and KL regularization.
 - Whether the best implementation is explicit test-time latent optimization, encoder-based latent inference, or a hybrid of both.
 - Whether uncertainty-conditioned action aggressiveness is tractable as an extension.
 - Whether the project should stay centered on hidden mass / center of mass, or broaden toward hidden compliance through sponge hardness in wiping.
@@ -59,6 +60,7 @@ At the method level, the active design question is how to combine force estimati
 - [thoughts/2026-04-21_context_exi_net_modernization.md](../thoughts/2026-04-21_context_exi_net_modernization.md)
 - [Force Estimation and Latent Adaptation Prior Art](force_estimation_latent_adaptation_prior_art.md)
 - [CAVIA: Fast Context Adaptation via Meta-Learning](cavia_fast_context_adaptation_meta_learning.md)
+- [Stochastic RNNPB and Variational Parametric Bias](stochastic_rnnpb_variational_parametric_bias.md)
 - [Legacy: Binary Tactile Contact Signal](binary_tactile_contact_signal.md)
 - User clarification on 2026-04-17: the key problem is to avoid tasks that are still solvable by trajectory reproduction alone when geometry is unchanged.
 - User clarification on 2026-04-19: dual-arm teleoperation replay may already solve box uprighting, so unseen center of mass and mass may be largely irrelevant there.
