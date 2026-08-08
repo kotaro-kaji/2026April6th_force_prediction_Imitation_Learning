@@ -19,6 +19,7 @@
 
 ## Paper Notes
 
+- [Feedback World Model Enables Precise Guidance of Diffusion Policy](feedback_world_model_precise_guidance_diffusion_policy.md): Predicts the next image-derived latent, corrects it from online visual feedback, and uses the corrected prediction to guide a diffusion policy; a close visual-only baseline for this project.
 - [Improving Robotic Imitation Learning with Predicted Facial Motion Using Transformers](improving_robotic_imitation_learning_with_predicted_facial_motion_using_transformers.md): Transformer-based facial landmark prediction is fed into ACT for robotic feeding, improving success from 42% to 74% with short-horizon prediction.
 - [IIDA: Context Is Everything for Implicit Identification](iida_context_is_everything_implicit_identification.md): IIDA infers an 8-dimensional environment latent `z_e` from context transition tuples `(s, a, s')` and conditions a dynamics predictor on it.
 - [EXI-Net Explicit and Implicit Dynamics Parameters](exi_net_explicit_implicit_dynamics_parameters.md): EXI-Net uses a 4-dimensional explicit dynamics vector `d_e` and a 5-dimensional implicit parametric-bias vector `d_i` in its standard object-pushing setup.

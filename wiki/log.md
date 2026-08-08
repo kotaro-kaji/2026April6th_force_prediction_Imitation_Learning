@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-08] ingest | Feedback World Model Enables Precise Guidance of Diffusion Policy
+
+- Added arXiv:2605.15705v1 to `raw/` under its paper title.
+- Recorded its future image-feature prediction and online visual-latent feedback as a close visual-only baseline for the project.
+- Noted the remaining distinction around force-based correction and persistent hidden-physics memory.
+
 ## [2026-06-16] maintenance | Mark binary contact-state gating as legacy
 
 - Updated the proposed-method, research-theme, regrasping, internal-property-memory, and index pages so explicit binary tactile/contact-state gating is no longer presented as part of the current method.
